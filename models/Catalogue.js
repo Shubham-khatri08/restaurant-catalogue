@@ -10,6 +10,10 @@ const CatalogueSchema = new mongoose.Schema({
     maxlength: [50, "Name cannot be more that 50 characters"],
   },
   slug: String,
+  price: {
+    type: Number,
+    required: [true, "Please add price"],
+  },
   description: {
     type: String,
     required: [true, "Please add a description"],
